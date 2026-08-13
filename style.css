@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+.container {
+  max-width: 450px;
+  margin: 20px auto;
+  background: #16213e;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+h2, h3, h4 {
+  margin-top: 5px;
+  color: #e94560;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #0f3460;
+  background-color: #0f3460;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #e94560;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #c0354e;
+}
+
+.btn-danger {
+  background-color: #ff2e63;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.highlight {
+  color: #f9d342;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #0f3460;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.role-desc {
+  background-color: #0f3460;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* === تحسين بطاقات اللاعبين لتوضيح الأسماء والمصوتين === */
+
+.player-card {
+  background-color: #ffffff; /* خلفية بيضاء للبطاقة */
+  color: #212529; /* لون النص أسود داكن بوضوح شديد */
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-align: right;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.player-card.dead {
+  background-color: #343a40 !important;
+  color: #a0a0a0 !important;
+  opacity: 0.7;
+  border: 1px solid #6c757d !important;
+}
+
+.player-card button {
+  width: auto;
+  padding: 8px 16px;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.result-box {
+  background-color: #f9d342;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* === قائمة الأدوار في شاشة النهاية === */
+.role-reveal-item {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
